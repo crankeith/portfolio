@@ -1,0 +1,49 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "project_name": "Random Quote Generator",
+      "description": "A simple example of client side javascript and html that selects a random quote from a static data set either by user interaction or on an interval.",
+      "technologies": ["Javascript", "HTML", "CSS"],
+      "live_link": "https://crankeith.github.io/techdegree-project-1/",
+      "github_link": "https://github.com/crankeith/techdegree-project-1",
+      "image_urls": ["quoteGenerator_main.png","quoteGenerator_1.png","quoteGenerator_2.png","quoteGenerator_3.png"]
+    },
+    {
+      "id": 2,
+      "project_name": "Paginated List",
+      "description": "A simple example of client side javascript and html that paginates a static data set and allows user to search and change page size.",
+      "technologies": ["Javascript", "HTML", "CSS"],
+      "live_link": "https://crankeith.github.io/techdegree-project-2/",
+      "github_link": "https://github.com/crankeith/techdegree-project-2",
+      "image_urls": ["pagination_main.png","pagination_1.png","pagination_2.png"]
+    },
+    {
+      "id": 3,
+      "project_name": "Interactive Form",
+      "description": "A form built with a number of validations and leverages Jquery for DOM traversal and manipulation. Validation is handled by leverage regular expression and conditional logic.",
+      "technologies": ["JQuery", "Javascript", "HTML", "CSS"],
+      "live_link": "https://crankeith.github.io/techdegree-project-3/",
+      "github_link": "https://github.com/crankeith/techdegree-project-3",
+      "image_urls": ["form_main.png","form_1.png","form_2.png"]
+    },
+    {
+      "id": 4,
+      "project_name": "TMNT Phrase Hunter Game",
+      "description": "Teenage Mutant Ninja Turtle themed word guessing game written using Object Oriented Programming methods in Javascript.",
+      "technologies": ["Javascript", "HTML", "CSS"],
+      "live_link": "https://crankeith.github.io/techdegree-project-4/",
+      "github_link": "https://github.com/crankeith/techdegree-project-4",
+      "image_urls": ["phraseHunter_main.png","phraseHunter_1.png","phraseHunter_2.png","phraseHunter_3.png"]
+    },
+    {
+      "id": 5,
+      "project_name": "Interactive Form",
+      "description": "A simple employee directory app illustrating skills to connect to an public API using fetch.",
+      "technologies": ["Javascript", "HTML", "CSS"],
+      "live_link": "https://crankeith.github.io/techdegree-project-5/",
+      "github_link": "https://github.com/crankeith/techdegree-project-5",
+      "image_urls": ["employeeDirApi_main.png","employeeDirApi_1.png","employeeDirApi_2.png","employeeDirApi_3.png"]
+    }
+  ]
+}

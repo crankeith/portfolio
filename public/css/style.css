@@ -1,6 +1,6 @@
 
 h1,h2,h3,h4,h5,p{
-  font-family: 'Merriweather', serif;
+  font-family: 'Open Sans', serif;
 }
 
   h5{
@@ -31,19 +31,20 @@ h1,h2,h3,h4,h5,p{
 }
 
 .button{
-  background-color: #333;
+  background-color: steelblue;
 }
 
 .button:hover{
-  background-color: #111;
+  background-color: lightsteelblue;
+  color: #333333;
 }
 
 a{
-  color: #333;
+  color: steelblue;
 }
 
 a:hover{
-  color: #111;
+  color: darkblue;
 }
 
 .image{
@@ -56,22 +57,27 @@ a:hover{
   line-height: 0;
 }
 
+.profile{
+  border: 0;
+  border-radius: 50%;
+}
+
 .portfolio-me{
   padding: 20px;
-  background: #121213;
+  background: steelblue;
   color: #fff;
   box-shadow: none !important;
 }
 
   .portfolio-me p{
     font-size: 14px;
-    color: #999;
+    color: #333;
   }
 
   .portfolio-me a{
     font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 600;
-    color: #555;
+    color: #111;
     font-size: 13px;
     letter-spacing: 2.5px;
     -webkit-text-transform: uppercase;
