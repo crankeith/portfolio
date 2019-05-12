@@ -20,22 +20,29 @@ app.get('/about', (req, res) => {
     res.render('about');
 });
 
+app.get('/projects', (req, res) => {
+    printMessage(302, `/projects. Redirect to /`);
+    return res.redirect('/');
+});
+
 app.get('/projects/:id', (req, res, next) => {
     const projectId = Number(req.params.id);
 
+    //Find matching project ID
     const selectProjects = data.projects.filter(project => project.id === projectId);
+
     if(selectProjects.length === 1){
-        //Success
+        //Success if only one is found
         res.locals.project = selectProjects[0];
         printMessage(200, `/projects/${projectId}`);
         res.render('project');
     } else if (selectProjects.length > 1) {
-        //Duplicate project ids
+        //Check for duplicate project ids
         const err = new Error('Error in data. Duplicate project IDs');
         err.status = 500;
         next(err);
     } else {
-        //Project doesn't exist
+        //Assumed project doesn't exist
         const err = new Error('Project does not exist');
         err.status = 400;
         next(err);
@@ -49,7 +56,7 @@ app.use((req,res, next)=>{
     next(err);
 });
 
-//Handle errors
+//Middleware for displaying errors
 app.use((err, req, res, next)=>{
     res.locals.error = err;
     printMessage(err.status, err.message, true);
@@ -58,6 +65,8 @@ app.use((err, req, res, next)=>{
 
 app.listen(3000);
 
+
+//Function to print errors to console
 function printMessage(code, message, isError){
     if(!isError){
         console.log(code, message);
