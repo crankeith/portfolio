@@ -8,7 +8,6 @@ const favicon = require('serve-favicon');
 app.use('/static', express.static('public'));
 app.use(favicon(path.join(__dirname, 'public/img', 'favicon.png')));
 app.set('view engine', 'pug');
-
 app.get('/', (req, res) => {
     printMessage(200, `/`);
     res.locals.projects = data.projects;
