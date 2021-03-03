@@ -19,7 +19,7 @@
   "homepage": "https://github.com/crankeith/portfolio#readme",
   "dependencies": {
     "express": "^4.16.4",
-    "pug": "^2.0.3",
+    "pug": "^3.0.1",
     "serve-favicon": "^2.5.0"
   }
 }
